@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="html3">Welcome to the new world</div>
+
+    <script>
+        {
+            var houses = [ { "plot": "Bhuvanesh", "cost": 10000000.00 },
+                           { "plot": "Mahesh", "cost": 8000000.00 },
+                           { "plot": "Ankur", "cost": 20000000.00 },
+                           { "plot": "Krishna", "cost": 15000000.00 },
+                           { "plot": "Anji", "cost": 7000000.00 },
+                           { "plot": "Janmaijai", "cost": 1000000.00 },
+                           { "plot": "Raju", "cost": 20000000.00 },
+                           { "plot": "Hemanth", "cost": 30000000.00 },
+                        ];
+            var names = [
+                           { "Name": "Bhuvanesh", "city": "Tirumala hills" },
+                           { "Name":"Mahesh","city":"Tirupathi"},
+                           { "Name":"Ankur","city":"Rajasthan"},
+                           { "Name":"Krishna","city":"Delhi"},
+                           { "Name":"Anji","city":"Nellore"},
+                           { "Name":"Janmaijai","city":"Delhi"},
+                           { "Name":"Raju","city":"Hyderabad"},
+                           { "Name": "Hemanth", "city": "Chennai" },
+                       ]
+
+         }
+        var output = '';
+        var j = 1;
+        for (var i = 0; i < houses.length; i++)
+        {
+            output += j + ". Name  :  " + houses[i].plot + ",     cost   :  " + houses[i].cost + '<br>';
+            j++;
+        }
+        j = 1;
+       for (var i = 0; i < names.length; i++)
+        {
+           output += j + ". Name :  " + names[i].Name + ",     city   :  " + names[i].city+'<br>';
+           j++;
+        }
+        
+        document.getElementById('html3').innerHTML = output;
+
+
+
+
+
+    </script>
+</body>
+</html>
